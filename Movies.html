@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
+
+    <title>Demodon.com/Movies</title>
+    <script src="js_files/jquery-1.4.4.min.js"></script>
+    <script src="js_files/slides.min.jquery.js"></script>
+    <script src="js_files/night.js"></script>
+    <script src="js_files/movescript.js"></script>
+    <link href="css_files/style.css" rel="stylesheet" />
+    <link href="bootstrap/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div id="mainmenu">
+        <ul>
+            <li><a class="transition" href="index.html"><img src="img/logo.png" id="logo"></a></li>
+            <li><a class="transition" href="Games.html">Ігри</a></li>
+            <li><a class="transition" href="Movies.html">Фільми</a></li>
+            <li><a class="transition" href="Serials.html">Серіали</a></li>
+        </ul>
+
+    </div>
+    <div id="main">
+    </div>
+
+    <script>
+        $(function () {
+	        $('#slides').slides({
+	            preload: true,
+	            preloadImage: 'img/loading.gif',
+	            hoverPause: true,
+	            animationStart: function () {
+	                $('.caption').animate({
+	                    bottom: -35
+	                }, 100);
+	            },
+	            animationComplete: function (current) {
+	                $('.caption').animate({
+	                    bottom: 0
+	                }, 200);
+	                if (window.console && console.log) {
+
+	                    console.log(current);
+	                };
+	            }
+	        });
+	    });
+	</script>
+
+
+    
+    <div id="Div2">
+    </div>
+    <div id="container">
+        <div id="div3">
+            <div id="slides">
+                <div class="slides_container">
+                    <div class="question_block">
+                        <b>Який фільм ти б вибрав (-ла)?</b><br /><br /><! --Which film would you choose? -->
+
+                        <small><input type="radio" name="q1" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q1">Щось стареньке, чорно-білі фільми</input></small><br />
+                        <small><input type="radio" name="q1">Новий фільм</input></small><br />
+                        <small><input type="radio" name="q1">Фільми з продовженнями</input></small><br />
+                        <small><input type="radio" name="q1">На одну ніч</input></small><br />
+                        <small><input type="radio" name="q1">Мало відомий фільм</input></small><br />
+                        <small><input type="radio" name="q1">Емоційний фільм</input></small><br />
+                        
+                    </div>
+
+                    <div class="question_block">
+                        <b>Чи важлива присутність відомих акторів?</b><br /><br /><! --Is the presence of famous actors important to you? -->
+                        <small><input type="radio" name="q2" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q2">Так</input></small><br />
+                        <small><input type="radio" name="q2">Ні</input></small><br />
+
+                    </div>
+                    <div class="question_block">
+                        <b>Ви любите містику?</b> <br /><br /><! --Do you like elements of mysticism? -->
+                        <small><input type="radio" name="q3" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q3">Так</input></small><br />
+                        <small><input type="radio" name="q3">Ні, тільки реалізм</input></small><br />
+
+                    </div>
+                    <div class="question_block">
+                        <b>Ви хочете вдумливі фільми?</b><br /><br /><! --Do you like the pressure on the mind? -->
+
+                        <small><input type="radio" name="q4" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q4">Так</input></small><br />
+                        <small><input type="radio" name="q4">Ні</input></small><br />
+                    </div>
+                    <div class="question_block">
+                        <b>А логічно роздумувати, вирішувати задачки?</b> <br /><br /><! --Do you like to think logically? -->
+
+                        <small><input type="radio" name="q5" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q5">Так</input></small><br />
+                        <small><input type="radio" name="q5">Ні</input></small><br />
+                    </div>
+                    <div class="question_block">
+                        <b>Чи ви любите неочікувані закінчення?</b> <br /><br /><! --Do you like unexpected endings? -->
+                        <small><input type="radio" name="q6" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q6">Так</input></small><br />
+                        <small><input type="radio" name="q6">Ні</input></small><br />
+                    </div>
+
+
+
+                    <div class="question_block">
+                        <b>Яка стилістика вам найбільше заходить?</b><br /><br /><! --Stylistics? -->
+                        <small><input type="radio" name="q7" checked></input>Без відповіді.</small><br />
+                        <small><input type="radio" name="q7"></input>Фентезі</small><br />
+                        <small><input type="radio" name="q7"></input>Наукова фантастика</small><br />
+                        <small><input type="radio" name="q7">Справжній світ</input></small><br />
+
+                    </div>
+
+                    <div class="question_block">
+                        <b>Вам подобаються фільми з багатьма<br> <center>головними лініями?</center></b><br /><! --You want a film with many storylines? -->
+                        <small><input type="radio" name="q8" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q8">Так</input></small><br />
+                        <small><input type="radio" name="q8">Ні</input></small><br />
+
+                    </div>
+                    <div class="question_block">
+                        <b>Скільки людей дивляться фільм?</b><br /><br /><! --How many of you out there? -->
+                        <small><input type="radio" name="q9" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q9">Я сам</input></small><br />
+                        <small><input type="radio" name="q9">Маленька компанія</input></small><br />
+                        <small><input type="radio" name="q9">Цілий кіноклуб!</input></small><br />
+
+                    </div>
+
+                    <div class="question_block">
+                        <b>Що ви очікуєте від фільму?</b> <br /><br /><! --Why do you want to watch a movie? -->
+                        <small><input type="radio" name="q10" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q10">Відпочинку</input></small><br />
+                        <small><input type="radio" name="q10">Зануритись в світ кіно</input></small><br />
+
+                    </div>
+                    <div class="question_block">
+                        <b>Чи мають герої мати суперсили?</b> <br /><br /><! --Should the heroes have superpowers? -->
+                        <small><input type="radio" name="q11" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q11">Так</input></small><br />
+                        <small><input type="radio" name="q11">Ні</input></small><br />
+
+                    </div>
+
+                    <div class="question_block">
+                        <b>А як щодо жорстокості?</b> <br /><br /><! --Should the movie be violent ?-->
+
+                        <small><input type="radio" name="q12" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q12">Так, тільки так</input></small><br />
+                        <small><input type="radio" name="q12">Ні, не люблю жорстокі фільми</input></small><br />
+
+                    </div>
+                    <div class="question_block">
+                        <b>Довіряєте своїм виборам?</b><br /><br /><! --Do you trust yourself? -->
+
+                        <small><input type="radio" name="q13" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q13">Так</input></small><br />
+                        <small><input type="radio" name="q13">Ні</input></small><br />
+                    </div>
+
+                    <div class="question_block">
+                        <b>Любите комедії?</b><br /><br /><! --Should the movie be funny? -->
+
+                        <small><input type="radio" name="q14" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q14">Так, звісно</input></small><br />
+                        <small><input type="radio" name="q14">Ні</input></small><br />
+                    </div>
+                    <div class="question_block">
+                        <b>Страшилки?</b><br /><br />
+
+                        <small><input type="radio" name="q15" checked>Без відповіді.</input></small><br />
+                        <small><input type="radio" name="q15">Так</input></small><br />
+                        <small><input type="radio" name="q15">Ні</input></small><br />
+                        <input value="Результати" onclick="lol()" type="button" id="submit">
+                    </div>
+
+                </div>
+                <a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+                <a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="images">
+        <img src="MoviesPosters/ABM.jpg" id="A_Beautiful_Mind">
+        <img src="MoviesPosters/CI.jpg" id="Central_Intelligence">
+        <img src="MoviesPosters/CO.jpg" id="Clockwork_Orange">
+        <input type="image" onclick="Deadpool.f()" src="MoviesPosters/Deadpool.jpg" id="Deadpool">
+        <img src="MoviesPosters/FC.jpg" id="Fight_Club">
+        <img src="MoviesPosters/FN.jpg" id="Finding_Nemo">
+        <img src="MoviesPosters/FMJ.jpg" id="Full_Metal_Jacket">
+        <img src="MoviesPosters/Icneption.jpg" id="Inception">
+        <img src="MoviesPosters/Alien.jpg" id="Alien">
+        <img src="MoviesPosters/Interstellar.jpg" id="Interstellar">
+        <img src="MoviesPosters/jOBS.jpg" id="jOBS">
+        <img src="MoviesPosters/PR.jpg" id="Pacific_Rim">
+        <input type="image" onclick="Star_Wars.f()" src="MoviesPosters/SW.jpg" id="Star_Wars">
+        <img src="MoviesPosters/TFTF.jpg" id="The_Fast_and_The_Furious">
+        <img src="MoviesPosters/TSR.jpg" id="The_Shawshank_Redemption">
+        <img src="MoviesPosters/Walle.jpg" id="Walle">
+        <img src="MoviesPosters/WWZ.jpg" id="World_War_Z">
+        <img src="MoviesPosters/Dredd.jpg" id="Dredd">
+        <img src="MoviesPosters/DA.jpg" id="The_Diamond_Arm">
+        <img src="MoviesPosters/SUN.jpg" id="Men_Behind_The_Sun">
+        <img src="MoviesPosters/TT.jpg" id="Terminator">
+        <img src="MoviesPosters/THE.jpg" id="The_Hateful_Eight">
+        <img src="MoviesPosters/IB.jpg" id="Inglourious_Basterds">
+        <input type="image" onclick="Pirates.f()" src="MoviesPosters/Pirates.jpg" id="Pirates_Of_Caribbean">
+        <input type="image" onclick="Alone.f()" src="MoviesPosters/Alone.jpg" id="Home_Alone">
+        <input type="image" onclick="Suicide.f()" src="MoviesPosters/Suicide.jpg" id="Suicide_Squad">
+
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("body").css("display", "none");
+
+            $("body").fadeIn(750);
+
+            $("a.transition").click(function(event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(750, redirectPage);
+            });
+
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
+</body>
+
+</html>

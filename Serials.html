@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
+
+    <title>Demodon.com/Serials</title>
+    <link rel="SHORTCUT ICON" href="img/favicon.ico" />
+    <link rel="icon" href="img/favicon.ico" type="image/ico" />
+    <script src="js_files/jquery-1.4.4.min.js"></script>
+    <script src="js_files/slides.min.jquery.js"></script>
+    <script src="js_files/night.js"></script>
+    <script src="js_files/scrapt.js"></script>
+    <link href="css_files/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="mainmenu">
+        <ul>
+            <li><a class="transition" href="index.html"><img src="img/logo.png" id="logo"></a></li>
+            <li><a class="transition" href="Games.html">Ігри</a></li>
+            <li><a class="transition" href="Movies.html">Фільми</a></li>
+            <li><a class="transition" href="Serials.html">Серіали</a></li>
+        </ul>
+
+    </div>
+    <div id="main">
+    </div>
+
+    <script>
+        $(function () {
+	        $('#slides').slides({
+	            preload: true,
+	            preloadImage: 'img/loading.gif',
+	            hoverPause: true,
+	            animationStart: function () {
+	                $('.caption').animate({
+	                    bottom: -35
+	                }, 100);
+	            },
+	            animationComplete: function (current) {
+	                $('.caption').animate({
+	                    bottom: 0
+	                }, 200);
+	                if (window.console && console.log) {
+
+	                    console.log(current);
+	                };
+	            }
+	        });
+	    });
+	</script>
+
+    <body>
+        <div id="container">
+            <div id="div3">
+                <div id="slides">
+                    <div class="slides_container">
+                        <div class="question_block">
+                            <b>Що ви очікуєте від серіалу? </b> <br /><br /><! --What are the serials for you? -->
+                            <small><input type="radio" name="q1" checked>Нічого</input></small><br />
+                            <small><input type="radio" name="q1">Певний релакс</input></small><br />
+                            <small><input type="radio" name="q1">Я обожнюю переживати за головних героїв</input>
+                            </small><br />
+
+                        </div>
+                        <div class="question_block">
+                            <b>Ви б дивилися комедію замість детективу?<br /><! --Would you watch some comedies instead of crime serials? -->
+                            </b> <br />
+                            <small><input type="radio" name="q2" checked>Без відповіді.</input></small><br />
+                            <small><input type="radio" name="q2">Так</input></small><br />
+                            <small><input type="radio" name="q2">Ні</input></small><br />
+                            <small><input type="radio" name="q2">Ні те, ні те</input></small><br />
+                            <small><input type="radio" name="q2">Я б дивився комедію з елементами детективу</input></small><br />
+                        </div>
+
+                        <div class="question_block">
+                            <b>Чи вам подобається вдумливий сюжет?</b> <br /><br /><! --Do you like thoughtful story? -->
+                            <small><input type="radio" name="q3" checked>Все рівно.</input></small><br />
+                            <small><input type="radio" name="q3">Так</input></small><br />
+                            <small><input type="radio" name="q3">Ні, я просто хочу розслабитись</input></small><br />
+
+                        </div>
+
+                        <div class="question_block">
+                            <b>Чи подобається вам жанр фентезі?</b> <br /><br /><! --Do you enjoy watching some fantasy? -->
+                            <small><input type="radio" name="q4" checked>Без відповіді.</input></small><br />
+                            <small><input type="radio" name="q4">Так.</input></small><br />
+                            <small><input type="radio" name="q4">Ні.</input></small><br />
+
+                        </div>
+                        <div class="question_block">
+                            <b>Чи подобаються вам серіали з елементами<br/><center> бойових мистецтв?</center></b><br /><! -- -->
+                            <small><input type="radio" name="q5" checked>Без відповіді.</input></small><br />
+                            <small><input type="radio" name="q5">Так, те що я шукав.</input></small><br />
+                            <small><input type="radio" name="q5">Так, так але у надприродньому світі</input></small><br />
+                            <small><input type="radio" name="q5">Ні</input></small><br />
+
+                        </div>
+                        <div class="question_block">
+                            <b>Яка стилістика вам ближче до душі?</b><br /><br /><! --What should it be? -->
+                            <small><input type="radio" name="q6" checked></input>Без відповіді.</small><br />
+                            <small><input type="radio" name="q6"></input>Анімація</small><br />
+                            <small><input type="radio" name="q6"></input>Реальний світ</small><br />
+                            <small><input type="radio" name="q6">Научна фантастика</input></small><br />
+
+                        </div>
+                        <div class="question_block">
+                            <b>Чи вам важливий сюжет?</b><br /><br /><! --Is the story important to you? -->
+                            <small><input type="radio" name="q7" checked></input>Без відповіді.</small><br />
+                            <small><input type="radio" name="q7"></input>Так</small><br />
+                            <small><input type="radio" name="q7">Ні</input></small><br />
+
+
+                        </div>
+                        <div class="question_block">
+                            <b>Чи має бути в серіалі жорстокість?</b><br /><br /><! --Should serial have some violence? -->
+                            <small><input type="radio" name="q8" checked>Без відповіді.</input></small><br />
+                            <small><input type="radio" name="q8">Так</input></small><br />
+                            <small><input type="radio" name="q8">Ні</input></small><br />
+
+                        </div>
+                        <div class="question_block">
+                            <b>Додамо інтриги?</b><br /><br /><! --Should serial be intriguing? -->
+                            <small><input type="radio" name="q9" checked>Без відповіді.</input></small><br />
+                            <small><input type="radio" name="q9">Ні</input></small><br />
+                            <small><input type="radio" name="q9">Так,хочу несподівані розв'язки.</input></small><br />
+                            <small><input type="radio" name="q9">Хочу чогось незвичного</input></small><br />
+
+                        </div>
+                        <div class="question_block">
+                            <b>Настрій на щось шедевральне?</b> <br /><br /><! -- -->
+                            <small><input type="radio" name="q10" checked>Без відповіді.</input></small><br />
+                            <small><input type="radio" name="q10">Так, безперечно</input></small><br />
+                            <small><input type="radio" name="q10">Я просто шукаю серіал на вечір</input></small><br />
+                            <small><input type="radio" name="q10">Ні</input></small><br />
+
+                        </div>
+                        <div class="question_block">
+                            <b>Вам подобаються динамічні кадри?</b> <br /><br /><! --Do you like the dynamic moments -->
+                            <small><input type="radio" name="q11" checked>Без відповіді.</input></small><br />
+                            <small><input type="radio" name="q11">Так</input></small><br />
+                            <small><input type="radio" name="q11">Ні</input></small><br />
+
+                        </div>
+                        <div class="question_block">
+                            <b>Чи має головний герой мати суперсили?</b> <br /><br /><! -- -->
+                            <small><input type="radio" name="q12" checked>Без відповіді.</input></small><br />
+                            <small><input type="radio" name="q12">Так</input></small><br />
+                            <small><input type="radio" name="q12">Ні</input></small><br />
+
+                        </div>
+
+                        <div class="question_block">
+                            <b>Вас захоплюють саркастичні комедії?</b> <br /><br /><! --Do you adore great sarcastic comedies? -->
+                            <small><input type="radio" name="q13" checked>Без відповіді.</input></small><br />
+                            <small><input type="radio" name="q13">Так.Обожнюю їх</input></small><br />
+                            <small><input type="radio" name="q13">Я б хотів щось інше</input></small><br />
+
+                        </div>
+
+                        <div class="question_block">
+                            <b>Приближається...</b> <br /><br /><! --Its coming ... -->
+                            <small><input type="radio" name="q14" checked>Зима близько, мій друже</input></small><br />
+                            <small><input type="radio" name="q14">Ватсон, що ж саме?</input></small><br />
+                            <small><input type="radio" name="q14">Гравітаціє, пощади!</input></small><br />
+                            <small><input type="radio" name="q14">Навіть не знаю, що обрати</input></small><br />
+
+                        </div>
+
+                        <div class="question_block">
+
+                            <b>Перегляд чого приносить вам найбільше <br/><center>задоволення?</center></b><! --What do you enjoy watching the most? -->
+                            <small><input type="radio" name="q15" checked>Без відповіді.</input></small><br />
+                            <small><input type="radio" name="q15">Нетфліксу</input></small><br />
+                            <small><input type="radio" name="q15">Я деякого роду фанат DC</input></small><br />
+                            <small><input type="radio" name="q15">Обожнюю Marvel</input></small><br />
+                            <input type="button" onclick="lol()" value="Результати" id="submit">
+                        </div>
+
+                    </div>
+                    <a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+                    <a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="images">
+            <a href="http://fs.to/video/serials/i5nZGw8N0guCAuCqwvgB0gE-teoriya-bolshogo-vzryva.html"><img src="serials_images/TBBT.jpg" id="The_Big_Bang_Theory"></a>
+            <a href='http://fs.to/video/serials/i5p0442izOOLT6pGzO5AY5G-strela.html'><img src="serials_images/arrow.jpg" id="Arrow"></a>
+            <a href='http://fs.to/video/serials/i1JCtyIbttxmbahuYuAcA1i-flesh.html'><img src="serials_images/00418651.jpg" id="Flash"></a>
+            <a href='http://fs.to/video/serials/ix1pooe5C6AhcIBiX14Yz6-hodyachije-mertvecy.html'><img src="serials_images/walkded.jpg" id="Walking_dead"></a>
+            <a href='http://fs.to/video/serials/iw58K3WwOdpPKv5TSszIWs-sorvigolova.html'><img src="serials_images/dd.jpg" id="Daredevil"></a>
+            <a href='http://fs.to/video/serials/iLeIMlRZKskGzLvIiI8joA-agenty-shh-i-t.html'><img src="serials_images/shield.jpg" id="Agents_SHIELD"></a>
+            <a href='http://fs.to/video/serials/iM7zHzi8UauUhK9jbjP95K-agent-karter.html'><img src="serials_images/agent.jpg" id="Agent_Carter"></a>
+            <a href='http://fs.to/video/serials/i1NofgD8u9BcGkRvgMXejF6-superdevushka.html'><img src="serials_images/supergirl.jpg" id="Supergirl"></a>
+            <a href='http://fs.to/video/serials/i4EI5dtXQT4GZQyoGbiKqAg-tajny-smolvilya.html'><img src="serials_images/smallville.jpg" id="Smallville"></a>
+            <a href='http://fs.to/video/serials/i4pFNH9WKpdPtduzU5GK8QU-krik.html'><img src="serials_images/scream.jpg" id="Scream"></a>
+            <a href='http://fs.to/video/serials/i4FElKXCnjzkUix543SuIw0-lucifer.html'><img src="serials_images/lucifer.jpg" id="Lucifer"></a>
+            <a href='http://fs.to/video/serials/i4pC9UlYH5MzsiWuirv3JT2-ulichnyj-bojec-kulak-ubijcy.html'><img src="serials_images/streetfighter.jpg" id="Street_Finghter"></a>
+            <a href='http://fs.to/video/serials/iw8Mx62DiK0ijgEZKFXlLi-smertelnaya-bitva-nasledije.html'><img src="serials_images/mortalkombat.jpg" id="Mortal_Kombat"></a>
+            <a href='http://fs.to/video/serials/i4FIftUU74dic1habThqwus-sverkhestestvennoje.html'><img src="serials_images/supernatural.jpg" id="Supernatural"></a>
+            <a href='http://fs.to/video/serials/i4qyqveEemEno9yrg4CPF2o-doktor-khaus.html'><img src="serials_images/House.jpg" id="House"></a>
+            <a href='http://fs.to/video/serials/iw8ypXjXXom7QpgYXsvU2Y-vo-vse-tyazhkije.html'><img src="serials_images/Breaking_bad.jpg" id="Breaking_Bad"></a>
+            <a href='http://fs.to/video/serials/i4FI0qr2I9WMdIHfy147nnG-bruklin-9-9.html'><img src="serials_images/Brooklyn.jpg" id="Brooklyn"></a>
+            <a href='http://fs.to/video/serials/iw8ziQ7M08iyEzxQEyj6AE-demony-da-vinchi.html'><img src="serials_images/Da_Vinci`s_Demons.jpg" id="Da_Vinci`s_Demons"></a>
+            <a href='http://fs.to/video/serials/iLaPWiaz6SAfjgyAIuxCBq-sverkhsposobnosti.html'><img src="serials_images/spw.jpg" id="Superpowers"></a>
+            <a href='http://fs.to/video/serials/iMb0cUQm44A8UDVzvpdULS-konstantin.html'><img src="serials_images/cnst.jpg" id="Constantine"></a>
+            <a href='http://fs.to/video/serials/i4qC57ie28vx5vaMXkbLFwA-sherlok.html'><img src="serials_images/shrl.jpg" id="Sherlock"></a>
+            <a href='http://fs.to/video/cartoonserials/i4ELwyjcDdRFIgfbo9wuQUM-ubijca-akame.html'><img src="serials_images/agk.jpg" id="Akame_Ga_Kill"></a>
+            <a href='http://fs.to/video/cartoonserials/i4EI66nAZsvGL1FazOGVdyU-korona-greshnika.html'><img src="serials_images/gc.jpg" id="Guity_Crown"></a>
+            <a href='http://fs.to/video/cartoonserials/iw8NtqlDnKsR4rvPveMSCQ-bezdomnyj-bog.html'><img src="serials_images/Nrg.jpg" id="Norgami"></a>
+            <a href='http://fs.to/video/cartoonserials/iMbeqIv9THjNxNkYBjdGG4-tokijskij-gul.html'><img src="serials_images/TG.jpg" id="Tokyo_Ghoul"></a>
+            <a href='http://fs.to/video/cartoonserials/iLb4W6om8qMT3eJ89iMNWM-zhizn-s-nulya.html'><img src="serials_images/RE.jpg" id="RE"></a>
+
+        </div>
+        <script>
+            $(document).ready(function() {
+                $("body").css("display", "none");
+
+                $("body").fadeIn(750);
+
+                $("a.transition").click(function(event) {
+                    event.preventDefault();
+                    linkLocation = this.href;
+                    $("body").fadeOut(750, redirectPage);
+                });
+
+                function redirectPage() {
+                    window.location = linkLocation;
+                }
+            });
+
+        </script>
+    </body>
+
+</html>

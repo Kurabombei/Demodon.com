@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
+
+    <title>Demodon.com/Games</title>
+    <link rel="SHORTCUT ICON" href="img/favicon.ico" />
+    <link rel="icon" href="img/favicon.ico" type="image/ico" />
+    <script src="js_files/jquery-1.4.4.min.js"></script>
+    <script src="js_files/slides.min.jquery.js"></script>
+    <script src="js_files/night.js"></script>
+    <script src="js_files/scrept.js"></script>
+    <link href="css_files/style.css" rel="stylesheet" />
+    <link href="bootstrap/css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div id="mainmenu">
+        <ul>
+            <li><a class="transition" href="index.html"><img src="img/logo.png" id="logo"></a></li>
+            <li><a class="transition" href="Games.html">Ігри</a></li>
+            <li><a class="transition" href="Movies.html">Фільми</a></li>
+            <li><a class="transition" href="Serials.html">Серіали</a></li>
+        </ul>
+
+    </div>
+    <div id="main">
+    </div>
+
+    <script>
+        $(function () {
+	        $('#slides').slides({
+	            preload: true,
+	            preloadImage: 'img/loading.gif',
+	            hoverPause: true,
+	            animationStart: function () {
+	                $('.caption').animate({
+	                    bottom: -35
+	                }, 100);
+	            },
+	            animationComplete: function (current) {
+	                $('.caption').animate({
+	                    bottom: 0
+	                }, 200);
+	                if (window.console && console.log) {
+
+	                    console.log(current);
+	                };
+	            }
+	        });
+	    });
+	</script>
+        <div id="Div2">
+        </div>
+        <div id="mainblock">
+            <div id="container">
+                <div id="div3">
+                    <div id="slides">
+                        <div class="slides_container">
+                            <div class="question_block">
+                                <b>Чи вам подобаються бойовики?</b> <br /><br /><! --Do you like a lot of action? -->
+                                <small><input type="radio" name="q1" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q1">Так</input></small><br />
+                                <small><input type="radio" name="q1">Ні</input></small><br />
+
+                            </div>
+                            <div class="question_block">
+                                <b>Чи вам заходять страшні ігри?</b> <br /><br /><! -- Do you like scary games?-->
+                                <small><input type="radio" name="q2" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q2">Так, навіть психоделічні</input></small><br />
+                                <small><input type="radio" name="q2">Більш-менш</input></small><br />
+                                <small><input type="radio" name="q2">Ні</input></small><br />
+                            </div>
+
+                            <div class="question_block">
+                                <b>Чи ти любиш головоломки в іграх?</b> <br /><br /> <! --Do you like thoughtful gameplay? -->
+                                <small><input type="radio" name="q3" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q3">Так</input></small><br />
+                                <small><input type="radio" name="q3">Ні</input></small><br />
+
+                            </div>
+
+                            <div class="question_block">
+                                <b>Чи ви досліджуєте локації ігор?</b> <br /><br /><! --Do you like to explore the game locations? -->
+                                <small><input type="radio" name="q4" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q4">Так</input></small><br />
+                                <small><input type="radio" name="q4">Ні</input></small><br />
+
+                            </div>
+                            <div class="question_block">
+                                <b>Чи ти любиш насилля?</b><br /><br /><! --Do you like violence? -->
+                                <small><input type="radio" name="q5" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q5">Ігри без насилля - для дітей!</input></small><br />
+                                <small><input type="radio" name="q5">Так, але насилля має бути реалістичне!</input></small><br />
+                                <small><input type="radio" name="q5">Ні</input></small><br />
+
+                            </div>
+                            <div class="question_block">
+                                <b>Якій стилістиці ви надасте перевагу?</b><br /><br /><! --What stylistics do you like? -->
+                                <small><input type="radio" name="q6" checked></input>Без відповіді.</small><br />
+                                <small><input type="radio" name="q6"></input>Фентезі</small><br />
+                                <small><input type="radio" name="q6"></input>Наукова фантастика</small><br />
+                                <small><input type="radio" name="q6">Реальний світ</input></small><br />
+
+                            </div>
+                            <div class="question_block">
+                                <b>Наскільки важливий для вас сюжет?</b><br /><br /><! --Is the story important to you? -->
+                                <small><input type="radio" name="q7" checked></input>Без відповіді.</small><br />
+                                <small><input type="radio" name="q7"></input>Так, перший пріоритет</small><br />
+                                <small><input type="radio" name="q7">Більш-менш</input></small><br />
+                                <small><input type="radio" name="q7">Ні, я не зацікавлений в сюжеті</input></small><br />
+
+                            </div>
+                            <div class="question_block">
+                                <b>Чи мусять ігри бути інтерактивними?</b><br /><br /><! --Should game be interactive? -->
+                                <small><input type="radio" name="q8" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q8">Так</input></small><br />
+                                <small><input type="radio" name="q8">Ні</input></small><br />
+
+                            </div>
+                            <div class="question_block">
+                                <b>Чи має гра бути реалістичною ?</b><br /><br /><! --Should game be realistic? -->
+                                <small><input type="radio" name="q9" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q9">Ні, не має</input></small><br />
+                                <small><input type="radio" name="q9">Так, але в симуляторі</input></small><br />
+                                <small><input type="radio" name="q9">Так</input></small><br />
+
+                            </div>
+                            <div class="question_block">
+                                <b>Ви хочете грати:</b> <br /><br /><! --You want to play -->
+                                <small><input type="radio" name="q10" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q10">Самому</input></small><br />
+                                <small><input type="radio" name="q10">З друзями</input></small><br />
+                                <small><input type="radio" name="q10">З іншими гравцями</input></small><br />
+
+                            </div>
+                            <div class="question_block">
+                                <b>Чи вам подобаються динамічні перестрілки?</b> <br /><br /><! --Do you like the dynamic gunfights? -->
+                                <small><input type="radio" name="q11" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q11">Так</input></small><br />
+                                <small><input type="radio" name="q11">Ні</input></small><br />
+
+                            </div>
+                            <div class="question_block">
+                                <b>Чи має герой мати суперсили?</b> <br /><br /><! --Should hero have superpowers? -->
+                                <small><input type="radio" name="q12" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q12">Так</input></small><br />
+                                <small><input type="radio" name="q12">Ні</input></small><br />
+
+                            </div>
+
+                            <div class="question_block">
+                                <b>Чи надаш перевагу холодній зброї?</b> <br /><br /><! --Would you prefer melee weapons? -->
+                                <small><input type="radio" name="q13" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q13">Так</input></small><br />
+                                <small><input type="radio" name="q13">Ні</input></small><br />
+
+                            </div>
+
+                            <div class="question_block">
+                                <b>Ви хардкорний гравець?</b> <br /><br /><! --Do tou like hardcore? -->
+                                <small><input type="radio" name="q14" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q14">Так</input></small><br />
+                                <small><input type="radio" name="q14">Ні</input></small><br />
+
+                            </div>
+
+                            <div class="question_block">
+
+                                <b>Чи ви стелс гравець?</b> <br /><br /><! --Do you like hiding from enemies? -->
+                                <small><input type="radio" name="q15" checked>Без відповіді.</input></small><br />
+                                <small><input type="radio" name="q15">Так</input></small><br />
+                                <small><input type="radio" name="q15">Ні</input></small><br />
+                                <input type="button" value="Результати" onclick="lol()" id="submit">
+                            </div>
+
+
+                        </div>
+                        <a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+                        <a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="images">
+
+            <a href="http://store.steampowered.com/app/107410/"><img src="game_images/arm.jpg" id="Arma3"></a>
+            <a href="http://store.steampowered.com/app/15100/?snr=1_7_7_151_150_2"><img src="game_images/ass1.jpg" id="Assassins_Creed"></a>
+            <a href="http://store.steampowered.com/app/33230/?snr=1_7_7_151_150_2"><img src="game_images/ass2.jpg" id="Assassins_Creed2"></a>
+            <a href="http://store.steampowered.com/app/48190/"><img src="game_images/ass3.jpg" id="Assassins_Creed_Brotherhood"></a>
+            <a href="http://store.steampowered.com/app/201870/"><img src="game_images/ass4.jpg" id="Assassins_Creed_Revelations"></a>
+            <a href="http://store.steampowered.com/app/208480/"><img src="game_images/ass5.jpg" id="Assassins_Creed_III"></a>
+            <a href="https://en.wikipedia.org/wiki/Bloodborne"><img src="game_images/bb.jpg" id="BLoodborne"></a>
+            <a href="http://store.steampowered.com/app/8870/"><img src="game_images/biosh.jpg" id="Bioshock_Infinite"></a>
+
+            <a href="http://store.steampowered.com/app/7940/"><img src="game_images/cll1.jpg" id="Call_Of_Duty_Modern_Warfare"></a>
+            <a href="http://store.steampowered.com/app/10180/"><img src="game_images/cll2.jpg" id="Call_Of_Duty_Modern_Warfare2"></a>
+            <a href="http://store.steampowered.com/app/115300/"><img src="game_images/cll3.jpg" id="Call_Of_Duty_Modern_Warfare3"></a>
+            <a href="http://store.steampowered.com/app/42700/"><img src="game_images/cll4.jpg" id="Call_Of_Duty_Black_Ops"></a>
+            <a href="http://store.steampowered.com/app/202970/"><img src="game_images/cll5.jpg" id="Call_Of_Duty_Black_Ops2"></a>
+            <a href="http://store.steampowered.com/app/311210/"><img src="game_images/cll6.jpg" id="Call_Of_Duty_Black_Ops3"></a>
+            <a href="http://store.steampowered.com/app/730/"><img src="game_images/csgo.jpg" id="CS_GO"></a>
+            <a href="http://store.steampowered.com/app/238010/"><img src="game_images/deus.jpg" id="DeusEx_HumanRevolution"></a>
+
+            <a href="http://store.steampowered.com/app/337000/"><img src="game_images/deus2.jpg" id="DeusEx_MankindDivided"></a>
+            <a href="http://store.steampowered.com/app/570/"><img src="game_images/dota.jpg" id="DOTA2"></a>
+            <a href="http://store.steampowered.com/app/17470/"><img src="game_images/DS1.jpg" id="DeadSpace"></a>
+            <a href="http://store.steampowered.com/app/47780/"><img src="game_images/DS2.jpg" id="DeadSpace2"></a>
+            <a href="https://en.wikipedia.org/wiki/Dead_Space_3"><img src="game_images/DS3.jpg" id="DeadSpace3"></a>
+            <a href="http://store.steampowered.com/app/298110/"><img src="game_images/FCR.jpg" id="FarCry4"></a>
+            <a href="http://store.steampowered.com/app/292120/"><img src="game_images/ffx.jpg" id="FinalFantasy_XIII"></a>
+            <a href="http://store.steampowered.com/app/38410/"><img src="game_images/fll1.jpg" id="Fallout2"></a>
+
+            <a href="http://store.steampowered.com/app/2028016/"><img src="game_images/fll2.jpg" id="Fallout_NewVegas"></a>
+            <a href="http://store.steampowered.com/app/377160/"><img src="game_images/fll3.jpg" id="Fallout4"></a>
+            <a href="http://store.steampowered.com/app/12100/"><img src="game_images/gat3.jpg" id="GTA_3"></a>
+            <a href="http://store.steampowered.com/app/12210/"><img src="game_images/gat4.jpg" id="GTA_IV"></a>
+            <a href="http://store.steampowered.com/app/271590/"><img src="game_images/gat5.jpg" id="GTA_V"></a>
+            <a href="https://en.wikipedia.org/wiki/Gears_of_War"><img src="game_images/gow.jpg" id="GearsOfWar"></a>
+            <a href="http://store.steampowered.com/app/219150/"><img src="game_images/hotl.jpg" id="HotlineMaimi"></a>
+            <a href="https://www.amazon.com/heavy-rain-playstation-3/dp/b0055l9bfo"><img src="game_images/hp.jpg" id="HeavyRain"></a>
+
+            <a href="https://www.amazon.com/infamous-second-son-limited-playstation-4/dp/b00bgaa0su"><img src="game_images/inf.jpg" id="inFAMOUS_SecondSon"></a>
+            <a href="https://www.amazon.com/metal-gear-solid-collection-playstation-2/dp/b001383l36"><img src="game_images/matal.jpg" id="MetalGearSolid"></a>
+            <a href="https://www.amazon.com/metal-gear-solid-2-liberty-pc/dp/b00005ml10"><img src="game_images/matal2.jpg" id="MetalGearSolid2"></a>
+            <a href="https://www.amazon.com/Metal-Gear-Solid-Subsistence-Playstation-2/dp/B000BXKA38/ref=sr_1_1?ie=UTF8&qid=1472240160&sr=8-1&keywords=metal+gear+solid+3%3A+subsistence"><img src="game_images/matal3.jpg" id="MetalGearSolid3"></a>
+            <a href="http://www.ebay.co.uk/itm/Metal-Gear-Solid-4-25th-Anniversary-Edition-PS3-NEW-SEALED-FAST-DISPATCH-/162103587876"><img src="game_images/matal4.jpg" id="MetalGearSolid4"></a>
+            <a href="http://www.ebay.co.uk/itm/Metal-Gear-Solid-Peace-Walker-PSP-/112078096229"><img src="game_images/matal5.jpg" id="MetalGearSolid_Peace_Walker"></a>
+            <a href="http://store.steampowered.com/app/311340/"><img src="game_images/matal6.jpg" id="MetalGearSolid_V_Ground_Zeroes"></a>
+            <a href="http://store.steampowered.com/app/287700/"><img src="game_images/matal7.jpg" id="MetalGearSolid_V_The_Phantom_Pain"></a>
+
+            <a href="https://minecraft.net/ru/store/minecraft/"><img src="game_images/mnec.jpg" id="Minecraft"></a>
+            <a href="http://store.steampowered.com/app/204100/"><img src="game_images/MP.jpg" id="MaxPayne3"></a>
+            <a href="http://store.steampowered.com/app/17460/"><img src="game_images/MSE.jpg" id="MassEffect"></a>
+            <a href="http://store.steampowered.com/app/24980/"><img src="game_images/MSE2.jpg" id="MassEffect2"></a>
+            <a href="https://www.origin.com/en-ru/store/buy/mass-effect-3/pc-download/base-game/standard-edition"><img src="game_images/MSE3.jpg" id="MassEffect3"></a>
+            <a href="http://store.steampowered.com/app/275850/"><img src="game_images/NMS.jpg" id="NoMansSky"></a>
+            <a href="http://store.steampowered.com/app/238320/"><img src="game_images/otlst.jpg" id="Outlast"></a>
+            <a href="http://store.steampowered.com/app/218620/?snr=1_7_7_151_150_1"><img src="game_images/payd.jpg" id="PayDay2"></a>
+
+            <a href="http://store.steampowered.com/app/620/"><img src="game_images/portl.jpg" id="Portal2"></a>
+            <a href="http://store.steampowered.com/app/115320/"><img src="game_images/prt2.jpg" id="Prototype2"></a>
+            <a href="http://store.steampowered.com/app/206420/"><img src="game_images/sain.jpg" id="SaintsRow4"></a>
+            <a href="http://store.steampowered.com/app/63380/"><img src="game_images/snip.jpg" id="SniperElite_V2"></a>
+            <a href="http://store.steampowered.com/app/72850/?snr=1_7_7_151_150_1"><img src="game_images/TES.jpg" id="TheElderScrolls_V_Skyrim"></a>
+            <a href="http://www.ebay.com/itm/Uncharted-Drakes-Fortune-Playstation-3-Game-/371637137217?hash=item56874caf41:g:pfgAAOSwhDdXD6ee"><img src="game_images/unch1.jpg" id="Uncharted"></a>
+            <a href="http://www.ebay.com/itm/Uncharted-2-Among-Thieves-Game-of-the-Year-Edition-Playstation-3-Game-/291785564135?hash=item43efc65fe7:g:OyAAAOSwNsdXRDzr"><img src="game_images/unch2.jpg" id="Uncharted2"></a>
+            <a href="http://www.ebay.com/itm/Uncharted-3-Drakes-Deception-Sony-Playstation-3-Game-/371604292326?hash=item56855782e6:g:5VEAAOSwI3RW~Tth"><img src="game_images/unch3.jpg" id="Uncharted3"></a>
+
+            <a href="http://www.ebay.com/itm/PS4-UNCHARTED-4-A-THIEFS-END-SPECIAL-EDITION-PS4-GAME-NEW-/302043651115?hash=item4653345c2b:g:XekAAOSwawpXsnIz"><img src="game_images/unch4.jpg" id="Uncharted4"></a>
+            <a href="http://store.steampowered.com/app/230410/"><img src="game_images/wfr.jpg" id="Warframe"></a>
+            <a href="http://store.steampowered.com/app/20900/"><img src="game_images/wit.jpg" id="TheWitcher"></a>
+            <a href="http://store.steampowered.com/app/20920/"><img src="game_images/wit2.jpg" id="TheWitcher2_AssassinsOfKings"></a>
+            <a href="http://store.steampowered.com/app/292030/"><img src="game_images/wit3.jpg" id="TheWitcher3_WildHunt"></a>
+            <a href="http://www.ebay.com/itm/Wolfenstein-PC-2009-Activision-DVD-New-Boxset-/221450362487?hash=item338f785e77:g:7h4AAOxyF0pThR3w"><img src="game_images/wlf.jpg" id="Wolfenstein"></a>
+            <a href="http://store.steampowered.com/app/201810/"><img src="game_images/wlf2.jpg" id="Wolfenstein_TheNewOrder"></a>
+            <a href="http://store.steampowered.com/app/268500/"><img src="game_images/xcom.jpg" id="XCOM2"></a>
+            <a href="http://store.steampowered.com/app/301640/"><img src="game_images/zbarm.jpg" id="ZombieArmyTrilogy"></a>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $("body").css("display", "none");
+
+                $("body").fadeIn(750);
+
+                $("a.transition").click(function(event) {
+                    event.preventDefault();
+                    linkLocation = this.href;
+                    $("body").fadeOut(750, redirectPage);
+                });
+
+                function redirectPage() {
+                    window.location = linkLocation;
+                }
+            });
+        </script>
+
+
+
+    </body>
+
+</html>
