@@ -28,7 +28,6 @@ body,div,span,applet,object,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addre
     outline: 0;
     font-weight: inherit;
     font-style: inherit;
-    font-size: 20%%;
     
     font-family: inherit;
     background-repeat: repeat-y;
@@ -308,13 +307,13 @@ h1 {
     font-family: Arsenal;
 }
 
-#main {
-    height: 74px;
-    background-color: #CDDCDF;
-    align-content: stretch;
-/*    white-space:nowrap;*/
+    #main{
+        height: 74px;
+        background-color: #CDDCDF;
+        background-repeat:repeat-x;
+        align-content: stretch;
+    }    
 
-}
 
 #mainmenu {
     background-color: #CDDCDF;
@@ -356,7 +355,6 @@ h1 {
     display: inline;
 }
 
-
 #mainmenu ul li a {
     color: #527590;
 /*    background-color: #FF6F61;*/
@@ -366,6 +364,7 @@ h1 {
     transition: .25s;
 
 }
+
 #logo {
     margin-left:-50%;
     position:relative;
@@ -584,4 +583,15 @@ ul.social li h1 {
     padding-bottom:0.5em;
 }
 
+#about_me {
 
+    background-size: cover;
+    position: inherit;
+    padding: 1%;
+    font-family: Arsenal;
+    font-size: 1.8em;
+    padding-left: 35px;
+    color: white;
+    height: 20%;
+    width: 40%;
+}
