@@ -11,10 +11,13 @@
     
     <script src="js_files/jquery-1.4.4.min.js"></script>
     <script src="js_files/slides.min.jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
 <!--    <script src="js_files/night.js"></script>-->
     
     <link href="css_files/style.css" rel="stylesheet" />
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    
     <script>
 /** Для нормальної роботи слайдера **/
         $(function() {
@@ -48,76 +51,82 @@
 
 <body>
 
-    <div id="mainmenu">
-        <ul>
-            <li><a class="transition" href="index.html"><img src="img/logo.png" id="logo"></a></li>
-            <li><a class="transition" href="games.html">Ігри</a></li>
-            <li><a class="transition" href="movies.html">Фільми</a></li>
-            <li><a class="transition" href="serials.html">Серіали</a></li>
-            <li><a class="transition" href="me.html">Про мене</a></li>
-        </ul>
-
-    </div>
-
-    <div id="main">
-    </div>
-
-    <div id="container">
-        <div id="div1">
-            <div id="slides">
-                <div class="slides_container">
-                    <div>
-                        <img src="img/slide-1.png" width="530" height="270" alt="Slide 1">
-                    </div>
-                    <div>
-                        <img src="img/slide-2.png" width="530" height="270" alt="Slide 2">
-                    </div>
-                    <div>
-                        <img src="img/slide-3.png" width="530" height="270" alt="Slide 3">
-                    </div>
-                    <div>
-                        <img src="img/slide-4.png" width="530" height="270" alt="Slide 4">
-                    </div>
-                    <div>
-                        <img src="img/slide-5.png" width="530" height="270" alt="Slide 5">
-                    </div>
-                    <div>
-                        <img src="img/slide-6.png" width="530" height="270" alt="Slide 6">
-                    </div>
-                    <div>
-                        <img src="img/slide-7.png" width="530" height="270" alt="Slide 7">
-                    </div>
-                    <div>
-                        <img src="img/slide-8.png" width="530" height="270" alt="Slide 8">
-                    </div>
-                    <div>
-                        <img src="img/slide-9.png" width="530" height="270" alt="Slide 9">
-                    </div>
+    	<header>
+        <nav class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <a class="transition" href="index.html"><img src="img/logo.png" id="logo" style="height: 100px"></a>
                 </div>
-                <a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
-                <a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+                
+                <div class="col-sm-10">
+                    <ul class="menu-list">
+                        <li><a class="transition_header" href="games.html">Ігри</a></li>
+                        <li><a class="transition_header" href="movies.html">Фільми</a></li>
+                        <li><a class="transition_header" href="serials.html">Серіали</a></li>
+                        <li><a class="transition_header" href="me.html">Про мене</a></li>
+                    </ul>				
+                </div>
+            </div>		
+        </nav>
+    </header>
+    <main>
+        <div id="container">
+            <div id="div1">
+                <div id="slides">
+                    <div class="slides_container">
+                        <div>
+                            <img src="img/slide-1.png" width="530" height="270" alt="Slide 1">
+                        </div>
+                        <div>
+                            <img src="img/slide-2.png" width="530" height="270" alt="Slide 2">
+                        </div>
+                        <div>
+                            <img src="img/slide-3.png" width="530" height="270" alt="Slide 3">
+                        </div>
+                        <div>
+                            <img src="img/slide-4.png" width="530" height="270" alt="Slide 4">
+                        </div>
+                        <div>
+                            <img src="img/slide-5.png" width="530" height="270" alt="Slide 5">
+                        </div>
+                        <div>
+                            <img src="img/slide-6.png" width="530" height="270" alt="Slide 6">
+                        </div>
+                        <div>
+                            <img src="img/slide-7.png" width="530" height="270" alt="Slide 7">
+                        </div>
+                        <div>
+                            <img src="img/slide-8.png" width="530" height="270" alt="Slide 8">
+                        </div>
+                        <div>
+                            <img src="img/slide-9.png" width="530" height="270" alt="Slide 9">
+                        </div>
+                    </div>
+                    <a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+                    <a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <table class="table1">
-        <tr>
-            <td id="desk" >
-                Не знаєш що подивитись або пограти цього вечора?
-                Тоді ти в правильному місці !<br/>
-                Вибирай зверху потрібну категорію.
-<!--
-                You don't know what to watch for the evening? or play?
-                Then you are in the right place !
-                Here you can find the most suitable film for you and in minutes !
--->
-            </td>
-            <th id="rightblock">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20597.107756548503!2d24.0352629!3d49.811664150000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1583796533730!5m2!1suk!2sua" id="map"  allowfullscreen="" ></iframe>
-<!--                style="frameborder = 0"-->
-            </th>
-        </tr>
-    </table>
+        <table class="table1">
+            <tr>
+                <td id="desk" >
+                    Не знаєш що подивитись або пограти цього вечора?
+                    Тоді ти в правильному місці !<br/>
+                    Вибирай зверху потрібну категорію.
+    <!--
+                    You don't know what to watch for the evening? or play?
+                    Then you are in the right place !
+                    Here you can find the most suitable film for you and in minutes !
+    -->
+                </td>
+                <th id="rightblock">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20597.107756548503!2d24.0352629!3d49.811664150000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1583796533730!5m2!1suk!2sua" id="map"  allowfullscreen="" ></iframe>
+    <!--                style="frameborder = 0"-->
+                </th>
+            </tr>
+        </table>
+    </main>
     <div class="footer">
         <div class="footcontainer">
             <ul class="social">

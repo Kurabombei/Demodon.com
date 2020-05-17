@@ -12,25 +12,32 @@
     <script src="js_files/slides.min.jquery.js"></script>
     <script src="js_files/night.js"></script>
     <script src="js_files/scrept.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
     <link href="css_files/style.css" rel="stylesheet" />
+    
     <link href="bootstrap/css" rel="stylesheet" />
 
 </head>
 <body>
+    <header>
+        <nav class="container">
+            <div class="row">
+                <div class="col-sm-2 col-md-4 col-lg-3">
+                    <a class="transition" href="index.html"><img src="img/logo.png" id="logo" style="height: 100px"></a>
+                </div>
 
-    <div id="mainmenu">
-        <ul>
-            <li><a class="transition" href="index.html"><img src="img/logo.png" id="logo"></a></li>
-            <li><a class="transition" href="games.html">Ігри</a></li>
-            <li><a class="transition" href="movies.html">Фільми</a></li>
-            <li><a class="transition" href="serials.html">Серіали</a></li>
-            <li><a class="transition" href="me.html">Про мене</a></li>
-        </ul>
-
-    </div>
-    <div id="main">
-    </div>
-
+                <div class="col-sm-10 col-md-8 col-lg-9">
+                    <ul class="menu-list">
+                        <li><a class="transition_header" href="games.html">Ігри</a></li>
+                        <li><a class="transition_header" href="movies.html">Фільми</a></li>
+                        <li><a class="transition_header" href="serials.html">Серіали</a></li>
+                        <li><a class="transition_header" href="me.html">Про мене</a></li>
+                    </ul>				
+                </div>
+            </div>		
+        </nav>
+    </header>
+    
     <script>
         $(function () {
 	        $('#slides').slides({
@@ -54,8 +61,8 @@
 	        });
 	    });
 	</script>
-        <div id="Div2">
-        </div>
+    
+    <main>
         <div id="mainblock">
             <div id="container">
                 <div id="div3">
@@ -262,23 +269,24 @@
             <a href="http://store.steampowered.com/app/268500/"><img src="game_images/xcom.jpg" id="XCOM2"></a>
             <a href="http://store.steampowered.com/app/301640/"><img src="game_images/zbarm.jpg" id="ZombieArmyTrilogy"></a>
         </div>
-        <script>
-            $(document).ready(function() {
-                $("body").css("display", "none");
+    </main>
+    <script>
+        $(document).ready(function() {
+            $("body").css("display", "none");
 
-                $("body").fadeIn(750);
+            $("body").fadeIn(750);
 
-                $("a.transition").click(function(event) {
-                    event.preventDefault();
-                    linkLocation = this.href;
-                    $("body").fadeOut(750, redirectPage);
-                });
-
-                function redirectPage() {
-                    window.location = linkLocation;
-                }
+            $("a.transition").click(function(event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(750, redirectPage);
             });
-        </script>
+
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
 
 
 
