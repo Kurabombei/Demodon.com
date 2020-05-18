@@ -1,12 +1,29 @@
 @font-face{
-    font-family: Arsenal;
+    font-family: "Arsenal";
     src: url(fonts/Arsenal-Bold.ttf) format("truetype"),
         url("fonts/PTSans-Narrow.eot?") format("eot"),
         url('fonts/rsenal-Bold.eot?#iefix') format('embedded-opentype'),
         url('fonts/Arsenal-Bold.woff2') format('woff2'),
         url('fonts/Arsenal-Bold.woff') format('woff'),
         url('fonts/Arsenal-Bold.svg#Arsenal-Bold') format('svg');
+    
 }
+* {
+    outline: none!important;			
+    transition: all ease-in-out .3s;	
+    font-family:"Arsenal";
+}
+/*
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    align-items:center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+*/
 @media (200px <= width <= 600px) {
     body{font-size:12px; overflow:scroll;}
     .footer{
@@ -29,7 +46,7 @@ body,div,span,applet,object,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addre
     font-style: inherit;
     font-size: 100%;
     
-    font-family: Arsenal;
+    font-family: "Arsenal";
     background-repeat: repeat-y;
 }
 @media only screen and (max-width:900px){
@@ -42,17 +59,14 @@ body,div,span,applet,object,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addre
         font-weight: inherit;
         font-style: inherit;
 
-        font-family: Arsenal;
+        font-family: "Arsenal";
         background-repeat: repeat-y;
     }
     
-* {
-    outline: none!important;			
-    transition: all ease-in-out .3s;	
-}
+
 body {	
 	background-color: #1d1d1d;	
-	font: normal 16px/1.5 Helvetica, Arial, sans-serif;
+	font: normal 16px/1.5 "Arsenal", Arial, sans-serif;
 	color: #eee;
 	margin-bottom: 130px;
 }
@@ -92,9 +106,9 @@ header {
 	border-radius: 4px;
 	margin-left: 10px;
 }	
-	.menu-list li:hover{
-		box-shadow: 0 0 10px rgba(0,0,0,1);
-	}	
+.menu-list li:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+}	
 .menu-list li a{
 	color: rgba(255,255,255,0.5);
 }
@@ -102,44 +116,30 @@ header {
 	color: rgba(255,255,255,0.8);
 	text-decoration: none;
 }	
+
     
-    
-    
-    
-    
-    #logo {
+#main{
+    height: 74px;
+    background-color: #CDDCDF;
+    background-repeat:repeat-x;
+    align-content:flex-start;
+}
+#mainmenu ul {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap:nowrap;
+    justify-content: center;
+}
 
 }
-    
-    #main{
-        height: 74px;
-        background-color: #CDDCDF;
-        background-repeat:repeat-x;
-        align-content:flex-start;
-    }
-    #mainmenu ul {
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -ms-flex-align: center;
-        align-items: center;
-        flex-wrap:nowrap;
-        justify-content: center;
-    }
-/*
-    #mainmenu ul li{
-        display:
-    }
-*/
-}
-* {
-    outline: none!important;			
-    transition: all ease-in-out .3s;	
-}
+
 body {	
 	background-color: #212529;	
-	font: normal 16px/1.5 Helvetica, Arial, sans-serif;
+	font: normal 16px/1.5 "Arsenal", Arial, sans-serif;
 	color: #eee;
 	margin-bottom: 130px;
 }
@@ -194,26 +194,24 @@ header {
     
     
     
-    #logo {
 
-}
     
-    #main{
-        height: 74px;
-        background-color: #CDDCDF;
-        background-repeat:repeat-x;
-        align-content:flex-start;
-    }
-    #mainmenu ul {
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -ms-flex-align: center;
-        align-items: center;
-        flex-wrap:nowrap;
-        justify-content: center;
-    }
+#main{
+    height: 74px;
+    background-color: #CDDCDF;
+    background-repeat:repeat-x;
+    align-content:flex-start;
+}
+#mainmenu ul {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap:nowrap;
+    justify-content: center;
+}
 /*
     #mainmenu ul li{
         display:
@@ -231,7 +229,7 @@ body {
     background-color:#1d1d1d;
     background-size: cover;
     background-repeat: repeat-y;
-    font: normal 62.5%/1.5 Helvetica, Arial, sans-serif;
+    font: normal 62.5%/1.5 "Arsenal", Arial, sans-serif;
     letter-spacing: 0;
     color: #434343;
 /*    background: linear-gradient(to bottom right, #fdca47 0%, #ffcccc 100%);*/
@@ -452,7 +450,7 @@ a:active {
 }
 
 h1 {
-    font-family: Arsenal;
+    font-family: "Arsenal";
 
 }
 
@@ -526,7 +524,7 @@ h1 {
 }
 
 ul li {
-    font-family: Arsenal;
+    font-family: "Arsenal";
     font-size: 22px;
 }
 
@@ -605,7 +603,7 @@ table tr th {
 
 b {
     color: #52527a;
-    font-family: Arsenal;
+    font-family: "Arsenal";
     font-size: 22px;
     margin-top: 40px;
     padding-top:40px;
@@ -616,7 +614,7 @@ b {
 small {
     
     color: #52527a;
-    font-family: Arsenal;
+    font-family: "Arsenal";
     font-size: 18px;
     margin-top: 20px;
     margin-left:54px;
@@ -671,7 +669,7 @@ F
 .transition_header {
 /*    * Це до переходів header'а **/
     height: 40px;
-    font-family: Arsenal;
+    font-family: "Arsenal";
 }
 
 #rightblock {
@@ -735,7 +733,7 @@ ul.social li h1 {
     background-size: cover;
     position: inherit;
     padding: 1%;
-    font-family: Arsenal;
+    font-family: "Arsenal";
     font-size: 1.8em;
     padding-left: 35px;
     color: white;
@@ -748,10 +746,10 @@ ul.social li h1 {
 }
 
 #block_me h1{
-    font-family: Arsenal;
+    font-family: "Arsenal";
     color:aliceblue;
 }
 #block_me h3{
-    font-family: Arsenal;
+    font-family: "Arsenal";
     color:aliceblue;
 }
