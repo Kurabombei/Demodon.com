@@ -46,7 +46,7 @@ body,div,span,applet,object,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addre
     font-style: inherit;
     font-size: 100%;
     
-    font-family: "Arsenal";
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     background-repeat: repeat-y;
 }
 @media only screen and (max-width:900px){
@@ -59,14 +59,14 @@ body,div,span,applet,object,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addre
         font-weight: inherit;
         font-style: inherit;
 
-        font-family: "Arsenal";
+        font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
         background-repeat: repeat-y;
     }
     
 
 body {	
 	background-color: #1d1d1d;	
-	font: normal 16px/1.5 "Arsenal", Arial, sans-serif;
+	font: normal 16px/1.5 Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 	color: #eee;
 	margin-bottom: 130px;
 }
