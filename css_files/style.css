@@ -1,13 +1,4 @@
-@font-face{
-    font-family: "Arsenal";
-    src: url(fonts/Arsenal-Bold.ttf) format("truetype"),
-        url("fonts/PTSans-Narrow.eot?") format("eot"),
-        url('fonts/rsenal-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Arsenal-Bold.woff2') format('woff2'),
-        url('fonts/Arsenal-Bold.woff') format('woff'),
-        url('fonts/Arsenal-Bold.svg#Arsenal-Bold') format('svg');
-    
-}
+
 * {
     outline: none!important;			
     transition: all ease-in-out .3s;	
