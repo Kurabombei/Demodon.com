@@ -139,7 +139,7 @@ header {
 
 body {	
 	background-color: #212529;	
-	font: normal 16px/1.5 "Arsenal", Arial, sans-serif;
+	font: normal 16px/1.5 Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 	color: #eee;
 	margin-bottom: 130px;
 }
@@ -229,7 +229,7 @@ body {
     background-color:#1d1d1d;
     background-size: cover;
     background-repeat: repeat-y;
-    font: normal 62.5%/1.5 "Arsenal", Arial, sans-serif;
+    font: normal 62.5%/1.5 Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     letter-spacing: 0;
     color: #434343;
 /*    background: linear-gradient(to bottom right, #fdca47 0%, #ffcccc 100%);*/
@@ -450,7 +450,7 @@ a:active {
 }
 
 h1 {
-    font-family: "Arsenal";
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 
 }
 
@@ -524,7 +524,7 @@ h1 {
 }
 
 ul li {
-    font-family: "Arsenal";
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     font-size: 22px;
 }
 
@@ -603,7 +603,7 @@ table tr th {
 
 b {
     color: #52527a;
-    font-family: "Arsenal";
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     font-size: 22px;
     margin-top: 40px;
     padding-top:40px;
@@ -614,7 +614,7 @@ b {
 small {
     
     color: #52527a;
-    font-family: "Arsenal";
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     font-size: 18px;
     margin-top: 20px;
     margin-left:54px;
@@ -669,7 +669,7 @@ F
 .transition_header {
 /*    * Це до переходів header'а **/
     height: 40px;
-    font-family: "Arsenal";
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
 
 #rightblock {
@@ -733,7 +733,7 @@ ul.social li h1 {
     background-size: cover;
     position: inherit;
     padding: 1%;
-    font-family: "Arsenal";
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     font-size: 1.8em;
     padding-left: 35px;
     color: white;
@@ -746,10 +746,10 @@ ul.social li h1 {
 }
 
 #block_me h1{
-    font-family: "Arsenal";
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     color:aliceblue;
 }
 #block_me h3{
-    font-family: "Arsenal";
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     color:aliceblue;
 }
