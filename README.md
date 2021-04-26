@@ -1,2 +1,7 @@
-# Kurabombei.github.io
-This is a recommendation site which will help you to choose a game, film or tv series just by getting through a little quiz.
+# What's Demodon ?
+A simple recommendation web application for movies, tv-series, and games.  It saves user’s time on looking for what to watch or to play that evening through a short quiz.
+# Technologies
+ HTML, CSS, JS, jQuery, Bootstrap.
+### Status
+*Works, but looks for a new architecture with integrated CRUD operations someday* 
+
