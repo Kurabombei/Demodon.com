@@ -4,17 +4,7 @@
     transition: all ease-in-out .3s;	
     font-family:Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
-/*
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    align-items:center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-*/
+
 @media (200px <= width <= 600px) {
     body{font-size:12px; overflow:scroll;}
     .footer{
